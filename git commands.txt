@@ -1,0 +1,14 @@
+git config --global user.name nitin400
+git config --global user.name nitin.andhale26@gmail.com
+git init
+git add .
+git commit -m "commit"
+git status
+git remote add origin ..........link
+git push origin master
+
+error
+git remote set-url origin 
+https://<token>@github.com/<username>/<repo>
+
+
