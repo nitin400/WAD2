@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    /* Custom CSS styles */
+
+    /* Global */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .ui-header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Footer */
+    .ui-footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Home Page */
+    #home .ui-content {
+      background-color: #b9e78c;
+      padding: 20px;
+      text-align: center;
+    }
+    #home h1 {
+      color: #cb5a5a;
+    }
+
+    /* About Page */
+    #about .ui-content {
+      background-color: #90ccba;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Contact Page */
+    #contact .ui-content {
+      background-color: #b788c9;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+      <h1>Welcome to My Mobile Website</h1>
+    </div>
+    <div data-role="content">
+      <p>This is the home page content.</p>
+      <a href="#about" data-role="button" data-transition="slide">About</a>
+      <a href="#contact" data-role="button" data-transition="slide">Contact</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Footer</h4>
+    </div>
+  </div>
+
+  <!-- About Page -->
+  <div data-role="page" id="about">
+    <div data-role="header" data-position="fixed">
+      <h1>About</h1>
+    </div>
+    <div data-role="content">
+      <p>This is the about page content.</p>
+      <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">Back</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Footer</h4>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div data-role="page" id="contact">
+    <div data-role="header" data-position="fixed">
+      <h1>Contact</h1>
+    </div>
+    <div data-role="content">
+      <p>This is the contact page content.</p>
+      <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">Back</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Footer</h4>
+    </div>
+  </div>
+
+</body>
+</html>
